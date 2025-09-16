@@ -1,0 +1,45 @@
+---
+context: true
+priority: high
+scope: project
+---
+
+# Boiler Repair CV — Project Vision
+
+## Purpose
+- One-page, backendless CV to advertise a boiler/water-heater technician.
+- Hosted on GitHub Pages, QR-friendly, ultra fast, and 100% mobile-first.
+
+## Constraints
+- No backend or user-generated content; static assets only.
+- Angular standalone components, signals, OnPush, lazy sections.
+- Keep code modular and tiny; reuse UI blocks.
+
+## Sections (Single Page)
+1. Hero: name/trade, value prop, tel/WhatsApp CTAs, subtle load animation.
+2. About: photo, two-line origin story, quick credentials.
+3. Core Services: 3–5 items with 1-line benefits, SVG icons.
+4. How It Works: 3 steps (Request → Diagnose/Quote → Repair/Follow-up).
+5. Toolbox Highlights: 4–6 cards; images + 1-line why-it-matters.
+6. Tip of the Week: rotates on refresh via client-side random pick.
+7. FAQ & Myth-Busters: 4–5 Q&A + one flip myth → truth.
+8. Gallery (Before/After): 6–8 tiles with short captions.
+9. Service Area & Contact: static SVG map, tel/mail links, mini mailto form.
+10. Footer: anchor links, “Built with Angular • GitHub Pages”, LocalBusiness JSON-LD.
+
+## Design Principles
+- Bold, modern, high-contrast, large tap targets, thumb-friendly layout.
+- Motion used sparingly (fade/slide), 60fps; prefers-reduced-motion respected.
+- Image optimization and responsive sizes; icons as inline SVG.
+
+## Performance & SEO
+- Lighthouse 95+ mobile target; prefetch above-the-fold assets only.
+- Structured data: LocalBusiness JSON-LD; semantic landmarks; meta tags.
+- No blocking JS for non-critical effects; CSS first, JS minimal.
+
+## Deployment
+- GitHub Pages static hosting; base href set; no server features required.
+- Cache headers via Pages defaults; versioned assets for updates.
+
+## Success Criteria
+- Instant load on mobile, clear CTAs, increased call/WhatsApp taps.

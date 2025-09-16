@@ -1,0 +1,14 @@
+# Dependencies
+cv/node_modules/
+
+# Builds
+cv/dist/
+cv/.angular/
+
+# Editor/OS
+.vs/
+.vscode/
+*.log
+Thumbs.db
+Desktop.ini
+
