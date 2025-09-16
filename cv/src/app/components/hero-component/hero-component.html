@@ -1,0 +1,51 @@
+<section class="hero">
+  <div class="hero-background">
+    <div class="hero-pattern"></div>
+  </div>
+  
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-icon">🔥</span>
+        <span>Same-day service available</span>
+      </div>
+      
+      <h1 class="hero-title">
+        <span class="title-line">{{ name() }}</span>
+        <span class="title-line title-accent">{{ title() }}</span>
+      </h1>
+      
+      <p class="hero-description">
+        Fast, reliable boiler repair and maintenance. 
+        <strong>Emergency call-outs within 4 hours.</strong>
+      </p>
+      
+      <div class="hero-actions">
+        <a [href]="callUrl()" class="btn btn-primary btn-call">
+          <span class="btn-icon">📞</span>
+          <span>Call Now</span>
+        </a>
+        
+        <a [href]="whatsappUrl()" class="btn btn-whatsapp">
+          <span class="btn-icon">💬</span>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+      
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">5+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Emergency Service</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

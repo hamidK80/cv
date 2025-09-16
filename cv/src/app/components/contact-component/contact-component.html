@@ -1,0 +1,212 @@
+<section class="contact section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="title-underline"></div>
+      <p class="section-description">
+        Ready to fix your boiler? Contact us today for fast, reliable service
+      </p>
+    </div>
+    
+    <div class="contact-grid">
+      <!-- Contact Info Card -->
+      <div class="contact-info-card">
+        <div class="card-header">
+          <div class="header-icon">📞</div>
+          <h3>Contact Information</h3>
+        </div>
+        
+        <div class="contact-methods">
+          <div class="contact-method">
+            <div class="method-icon">📱</div>
+            <div class="method-content">
+              <h4>Phone</h4>
+              <a [href]="'tel:' + contactInfo().phone" class="contact-link">
+                {{ contactInfo().phone }}
+              </a>
+              <span class="method-note">Available 24/7 for emergencies</span>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <div class="method-icon">✉️</div>
+            <div class="method-content">
+              <h4>Email</h4>
+              <a [href]="'mailto:' + contactInfo().email" class="contact-link">
+                {{ contactInfo().email }}
+              </a>
+              <span class="method-note">We respond within 2 hours</span>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <div class="method-icon">📍</div>
+            <div class="method-content">
+              <h4>Address</h4>
+              <span class="contact-text">{{ contactInfo().address }}</span>
+              <span class="method-note">Serving the entire metro area</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="emergency-cta">
+          <button class="emergency-btn" (click)="callNow()">
+            <span class="btn-icon">🚨</span>
+            <span class="btn-text">Emergency Call</span>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Service Areas Card -->
+      <div class="service-areas-card">
+        <div class="card-header">
+          <div class="header-icon">🗺️</div>
+          <h3>Service Areas</h3>
+        </div>
+        
+        <div class="areas-grid">
+          @for (area of contactInfo().serviceAreas; track area) {
+            <div class="area-item">
+              <span class="area-icon">{{ getServiceIcon(area) }}</span>
+              <span class="area-name">{{ area }}</span>
+            </div>
+          }
+        </div>
+        
+        <div class="coverage-note">
+          <span class="note-icon">✅</span>
+          <span class="note-text">Free estimates within service area</span>
+        </div>
+      </div>
+      
+      <!-- Business Hours Card -->
+      <div class="hours-card">
+        <div class="card-header">
+          <div class="header-icon">🕒</div>
+          <h3>Business Hours</h3>
+        </div>
+        
+        <div class="hours-list">
+          <div class="hours-item">
+            <span class="day">Monday - Friday</span>
+            <span class="time">{{ contactInfo().businessHours.weekdays }}</span>
+          </div>
+          <div class="hours-item">
+            <span class="day">Saturday</span>
+            <span class="time">{{ contactInfo().businessHours.saturday }}</span>
+          </div>
+          <div class="hours-item emergency">
+            <span class="day">Sunday</span>
+            <span class="time">{{ contactInfo().businessHours.sunday }}</span>
+          </div>
+        </div>
+        
+        <div class="hours-note">
+          <span class="note-icon">⚡</span>
+          <span class="note-text">Emergency service available 24/7</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Contact Form -->
+    <div class="contact-form-section">
+      <div class="form-header">
+        <h3>Request a Quote</h3>
+        <p>Tell us about your boiler issue and we'll get back to you quickly</p>
+      </div>
+      
+      <form class="contact-form" (ngSubmit)="submitForm()">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input 
+              type="text" 
+              id="name" 
+              [(ngModel)]="contactForm().name" 
+              name="name"
+              required
+              placeholder="Your full name"
+            >
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input 
+              type="tel" 
+              id="phone" 
+              [(ngModel)]="contactForm().phone" 
+              name="phone"
+              required
+              placeholder="(555) 123-4567"
+            >
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input 
+              type="email" 
+              id="email" 
+              [(ngModel)]="contactForm().email" 
+              name="email"
+              placeholder="your@email.com"
+            >
+          </div>
+          
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select 
+              id="service" 
+              [(ngModel)]="contactForm().service" 
+              name="service"
+            >
+              <option value="">Select a service</option>
+              <option value="repair">Boiler Repair</option>
+              <option value="installation">New Installation</option>
+              <option value="maintenance">Maintenance</option>
+              <option value="emergency">Emergency Service</option>
+              <option value="inspection">System Inspection</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="urgency">Urgency Level</label>
+          <select 
+            id="urgency" 
+            [(ngModel)]="contactForm().urgency" 
+            name="urgency"
+          >
+            <option value="normal">Normal (Within 24 hours)</option>
+            <option value="urgent">Urgent (Same day)</option>
+            <option value="emergency">Emergency (ASAP)</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Describe the Issue</label>
+          <textarea 
+            id="message" 
+            [(ngModel)]="contactForm().message" 
+            name="message"
+            rows="4"
+            placeholder="Please describe your boiler issue, symptoms, or what service you need..."
+          ></textarea>
+        </div>
+        
+        <div class="form-actions">
+          <button type="submit" class="submit-btn">
+            <span class="btn-icon">📧</span>
+            <span class="btn-text">Send Request</span>
+          </button>
+          
+          <div class="form-note">
+            <span class="note-icon">ℹ️</span>
+            <span class="note-text">We'll contact you within 2 hours during business hours</span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

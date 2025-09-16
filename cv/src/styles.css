@@ -1,1 +1,7 @@
+/* Import theme system */
+@import './styles/variables.css';
+@import './styles/themes/dark.css';
+@import './styles/base.css';
+@import './styles/components.css';
+
 /* You can add global styles to this file, and also import other style files */

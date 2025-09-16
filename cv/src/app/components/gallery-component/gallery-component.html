@@ -1,0 +1,96 @@
+<section class="gallery section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Our Work Gallery</h2>
+      <div class="title-underline"></div>
+      <p class="section-description">
+        See the quality of our work through before and after transformations
+      </p>
+    </div>
+    
+    <div class="gallery-grid">
+      @for (item of galleryItems(); track item.id) {
+        <div class="gallery-item" [class.selected]="selectedItem() === item.id" (click)="selectItem(item.id)">
+          <div class="image-container">
+            <div class="before-after">
+              <div class="before-image">
+                <div class="image-placeholder">
+                  <span class="placeholder-icon">📷</span>
+                  <span class="placeholder-text">Before</span>
+                </div>
+                <div class="image-label">Before</div>
+              </div>
+              
+              <div class="after-image">
+                <div class="image-placeholder">
+                  <span class="placeholder-icon">✨</span>
+                  <span class="placeholder-text">After</span>
+                </div>
+                <div class="image-label">After</div>
+              </div>
+            </div>
+            
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <span class="overlay-icon">👁️</span>
+                <span class="overlay-text">Click to view</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-info">
+            <div class="gallery-header">
+              <h3 class="gallery-title">{{ item.title }}</h3>
+              <div class="gallery-badges">
+                <span class="service-badge">{{ item.service }}</span>
+                <span class="year-badge">{{ item.year }}</span>
+              </div>
+            </div>
+            
+            <p class="gallery-caption">{{ item.caption }}</p>
+            
+            <div class="gallery-stats">
+              <div class="stat">
+                <span class="stat-icon">⏱️</span>
+                <span class="stat-text">Same Day</span>
+              </div>
+              <div class="stat">
+                <span class="stat-icon">🛡️</span>
+                <span class="stat-text">Warrantied</span>
+              </div>
+              <div class="stat">
+                <span class="stat-icon">⭐</span>
+                <span class="stat-text">5 Star</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+    
+    <div class="gallery-summary">
+      <div class="summary-content">
+        <div class="summary-icon">🏆</div>
+        <div class="summary-text">
+          <h3>Quality Work Guaranteed</h3>
+          <p>Every project is completed to the highest standards with full warranty coverage. We take pride in our craftsmanship and customer satisfaction.</p>
+        </div>
+      </div>
+      
+      <div class="summary-stats">
+        <div class="stat">
+          <span class="stat-number">100+</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Customer Satisfaction</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">12</span>
+          <span class="stat-label">Month Warranty</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

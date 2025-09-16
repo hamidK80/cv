@@ -1,0 +1,62 @@
+<header class="header" [class.visible]="isVisible()" [class.scrolled]="isScrolled()">
+  <div class="header-container">
+    <!-- Logo and Business Name -->
+    <div class="header-brand">
+      <div class="brand-icon">🔧</div>
+      <div class="brand-text">
+        <span class="brand-name">{{ contactInfo().businessName }}</span>
+        <span class="brand-tagline">Boiler Repair Expert</span>
+      </div>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="header-nav desktop-nav">
+      <ul class="nav-list">
+        @for (item of navigationItems(); track item.name) {
+          <li class="nav-item">
+            <a (click)="scrollToSection(item.anchor)" class="nav-link">
+              {{ item.name }}
+            </a>
+          </li>
+        }
+      </ul>
+    </nav>
+
+    <!-- Call Button -->
+    <div class="header-actions">
+      <button class="call-btn" (click)="callNow()">
+        <span class="btn-icon">📞</span>
+        <span class="btn-text">Call Now</span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" (click)="toggleMobileMenu()" [class.active]="isMobileMenuOpen()">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" [class.open]="isMobileMenuOpen()">
+    <div class="mobile-nav-content">
+      <ul class="mobile-nav-list">
+        @for (item of navigationItems(); track item.name) {
+          <li class="mobile-nav-item">
+            <a (click)="scrollToSection(item.anchor)" class="mobile-nav-link">
+              {{ item.name }}
+            </a>
+          </li>
+        }
+      </ul>
+      
+      <div class="mobile-nav-actions">
+        <button class="mobile-call-btn" (click)="callNow()">
+          <span class="btn-icon">📞</span>
+          <span class="btn-text">Call {{ contactInfo().phone }}</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>

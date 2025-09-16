@@ -1,0 +1,63 @@
+<section class="faq section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="title-underline"></div>
+      <p class="section-description">
+        Get answers to common questions about boiler repair and maintenance
+      </p>
+    </div>
+    
+    <div class="faq-content">
+      <div class="faq-questions">
+        @for (question of questions(); track question.id) {
+          <div class="faq-item" [class.open]="isOpen(question.id)">
+            <button class="faq-question" (click)="toggleQuestion(question.id)">
+              <span class="question-text">{{ question.question }}</span>
+              <span class="question-icon">
+                <span class="icon-plus">+</span>
+                <span class="icon-minus">−</span>
+              </span>
+            </button>
+            
+            <div class="faq-answer">
+              <div class="answer-content">
+                <p>{{ question.answer }}</p>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+      
+      <div class="myth-busters">
+        <h3 class="myth-title">Myth Busters</h3>
+        <div class="myth-cards">
+          @for (myth of mythBusters(); track myth.id) {
+            <div class="myth-card">
+              <div class="myth-front">
+                <div class="myth-icon">❌</div>
+                <h4>Myth</h4>
+                <p>{{ myth.myth }}</p>
+              </div>
+              <div class="myth-back">
+                <div class="myth-icon">✅</div>
+                <h4>Truth</h4>
+                <p>{{ myth.truth }}</p>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+    
+    <div class="faq-footer">
+      <div class="footer-content">
+        <div class="footer-icon">💬</div>
+        <div class="footer-text">
+          <h4>Still have questions?</h4>
+          <p>Don't hesitate to call or WhatsApp us for personalized advice</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

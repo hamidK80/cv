@@ -1,0 +1,71 @@
+<section class="toolbox section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Professional Toolbox</h2>
+      <div class="title-underline"></div>
+      <p class="section-description">
+        State-of-the-art equipment for precise diagnostics and reliable repairs
+      </p>
+    </div>
+    
+    <div class="tools-grid">
+      @for (tool of tools(); track tool.id) {
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">
+              <span class="icon">{{ tool.icon }}</span>
+            </div>
+            <div class="tool-badge">
+              <span class="badge-text">Pro</span>
+            </div>
+          </div>
+          
+          <div class="tool-content">
+            <h3 class="tool-name">{{ tool.name }}</h3>
+            <p class="tool-description">{{ tool.description }}</p>
+            
+            <div class="tool-benefit">
+              <div class="benefit-header">
+                <span class="benefit-icon">⭐</span>
+                <span class="benefit-label">Why It Matters</span>
+              </div>
+              <p class="benefit-text">{{ tool.benefit }}</p>
+            </div>
+          </div>
+          
+          <div class="tool-footer">
+            <div class="tool-status">
+              <span class="status-dot"></span>
+              <span class="status-text">Ready to Use</span>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+    
+    <div class="toolbox-summary">
+      <div class="summary-content">
+        <div class="summary-icon">🛠️</div>
+        <div class="summary-text">
+          <h3>Complete Professional Setup</h3>
+          <p>Every tool is regularly calibrated and maintained to ensure accurate readings and reliable repairs. We invest in quality equipment so you get quality results.</p>
+        </div>
+      </div>
+      
+      <div class="summary-stats">
+        <div class="stat">
+          <span class="stat-number">6+</span>
+          <span class="stat-label">Professional Tools</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Calibrated</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Ready</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

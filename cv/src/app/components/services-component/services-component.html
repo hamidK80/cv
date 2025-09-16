@@ -1,0 +1,61 @@
+<section class="services section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Our Services</h2>
+      <div class="title-underline"></div>
+      <p class="section-description">
+        Professional boiler and heating solutions tailored to your needs
+      </p>
+    </div>
+    
+    <div class="services-grid">
+      @for (service of services(); track service.id) {
+        <div class="service-card">
+          <div class="service-icon">
+            <span class="icon">{{ service.icon }}</span>
+          </div>
+          
+          <div class="service-content">
+            <h3 class="service-title">{{ service.name }}</h3>
+            <p class="service-description">{{ service.description }}</p>
+            <div class="service-benefit">
+              <span class="benefit-icon">✨</span>
+              <span class="benefit-text">{{ service.benefit }}</span>
+            </div>
+          </div>
+          
+          <div class="service-action">
+            <button class="btn-service">Learn More</button>
+          </div>
+        </div>
+      }
+    </div>
+    
+    <div class="service-info">
+      <div class="info-card">
+        <div class="info-icon">⏰</div>
+        <div class="info-content">
+          <h4>Response Time</h4>
+          <p>{{ responseTime() }}</p>
+        </div>
+      </div>
+      
+      <div class="info-card">
+        <div class="info-icon">🕒</div>
+        <div class="info-content">
+          <h4>Working Hours</h4>
+          <p>Weekdays: {{ workingHours().weekdays }}</p>
+          <p>Weekends: {{ workingHours().weekends }}</p>
+        </div>
+      </div>
+      
+      <div class="info-card">
+        <div class="info-icon">🚨</div>
+        <div class="info-content">
+          <h4>Emergency Service</h4>
+          <p>{{ workingHours().emergency }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
