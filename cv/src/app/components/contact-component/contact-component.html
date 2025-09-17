@@ -1,10 +1,10 @@
 <section class="contact section">
   <div class="container">
     <div class="section-header">
-      <h2 class="section-title">Get In Touch</h2>
+      <h2 class="section-title">تماس با ما</h2>
       <div class="title-underline"></div>
       <p class="section-description">
-        Ready to fix your boiler? Contact us today for fast, reliable service
+        آماده تعمیر دیگ بخار خود هستید؟ امروز با ما تماس بگیرید برای خدمات سریع و قابل اعتماد
       </p>
     </div>
     
@@ -13,38 +13,38 @@
       <div class="contact-info-card">
         <div class="card-header">
           <div class="header-icon">📞</div>
-          <h3>Contact Information</h3>
+          <h3>اطلاعات تماس</h3>
         </div>
         
         <div class="contact-methods">
           <div class="contact-method">
             <div class="method-icon">📱</div>
             <div class="method-content">
-              <h4>Phone</h4>
+              <h4>تلفن</h4>
               <a [href]="'tel:' + contactInfo().phone" class="contact-link">
                 {{ contactInfo().phone }}
               </a>
-              <span class="method-note">Available 24/7 for emergencies</span>
+              <span class="method-note">24/7 برای موارد اضطراری در دسترس</span>
             </div>
           </div>
           
           <div class="contact-method">
             <div class="method-icon">✉️</div>
             <div class="method-content">
-              <h4>Email</h4>
+              <h4>ایمیل</h4>
               <a [href]="'mailto:' + contactInfo().email" class="contact-link">
                 {{ contactInfo().email }}
               </a>
-              <span class="method-note">We respond within 2 hours</span>
+              <span class="method-note">ظرف 2 ساعت پاسخ می‌دهیم</span>
             </div>
           </div>
           
           <div class="contact-method">
             <div class="method-icon">📍</div>
             <div class="method-content">
-              <h4>Address</h4>
+              <h4>آدرس</h4>
               <span class="contact-text">{{ contactInfo().address }}</span>
-              <span class="method-note">Serving the entire metro area</span>
+              <span class="method-note">خدمات در کل منطقه شهری</span>
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@
         <div class="emergency-cta">
           <button class="emergency-btn" (click)="callNow()">
             <span class="btn-icon">🚨</span>
-            <span class="btn-text">Emergency Call</span>
+            <span class="btn-text">تماس اضطراری</span>
           </button>
         </div>
       </div>
@@ -61,7 +61,7 @@
       <div class="service-areas-card">
         <div class="card-header">
           <div class="header-icon">🗺️</div>
-          <h3>Service Areas</h3>
+          <h3>مناطق خدمات</h3>
         </div>
         
         <div class="areas-grid">
@@ -75,7 +75,7 @@
         
         <div class="coverage-note">
           <span class="note-icon">✅</span>
-          <span class="note-text">Free estimates within service area</span>
+          <span class="note-text">برآورد رایگان در منطقه خدمات</span>
         </div>
       </div>
       
@@ -83,27 +83,27 @@
       <div class="hours-card">
         <div class="card-header">
           <div class="header-icon">🕒</div>
-          <h3>Business Hours</h3>
+          <h3>ساعات کاری</h3>
         </div>
         
         <div class="hours-list">
           <div class="hours-item">
-            <span class="day">Monday - Friday</span>
+            <span class="day">دوشنبه - جمعه</span>
             <span class="time">{{ contactInfo().businessHours.weekdays }}</span>
           </div>
           <div class="hours-item">
-            <span class="day">Saturday</span>
+            <span class="day">شنبه</span>
             <span class="time">{{ contactInfo().businessHours.saturday }}</span>
           </div>
           <div class="hours-item emergency">
-            <span class="day">Sunday</span>
+            <span class="day">یکشنبه</span>
             <span class="time">{{ contactInfo().businessHours.sunday }}</span>
           </div>
         </div>
         
         <div class="hours-note">
           <span class="note-icon">⚡</span>
-          <span class="note-text">Emergency service available 24/7</span>
+          <span class="note-text">خدمات اضطراری 24/7 در دسترس</span>
         </div>
       </div>
     </div>
@@ -111,40 +111,40 @@
     <!-- Contact Form -->
     <div class="contact-form-section">
       <div class="form-header">
-        <h3>Request a Quote</h3>
-        <p>Tell us about your boiler issue and we'll get back to you quickly</p>
+        <h3>درخواست برآورد</h3>
+        <p>در مورد مشکل دیگ بخار خود به ما بگویید و ما سریع با شما تماس خواهیم گرفت</p>
       </div>
       
       <form class="contact-form" (ngSubmit)="submitForm()">
         <div class="form-row">
           <div class="form-group">
-            <label for="name">Full Name *</label>
+            <label for="name">نام کامل *</label>
             <input 
               type="text" 
               id="name" 
               [(ngModel)]="contactForm().name" 
               name="name"
               required
-              placeholder="Your full name"
+              placeholder="نام کامل شما"
             >
           </div>
           
           <div class="form-group">
-            <label for="phone">Phone Number *</label>
+            <label for="phone">شماره تلفن *</label>
             <input 
               type="tel" 
               id="phone" 
               [(ngModel)]="contactForm().phone" 
               name="phone"
               required
-              placeholder="(555) 123-4567"
+              placeholder="09123456789"
             >
           </div>
         </div>
         
         <div class="form-row">
           <div class="form-group">
-            <label for="email">Email Address</label>
+            <label for="email">آدرس ایمیل</label>
             <input 
               type="email" 
               id="email" 
@@ -155,55 +155,55 @@
           </div>
           
           <div class="form-group">
-            <label for="service">Service Needed</label>
+            <label for="service">خدمات مورد نیاز</label>
             <select 
               id="service" 
               [(ngModel)]="contactForm().service" 
               name="service"
             >
-              <option value="">Select a service</option>
-              <option value="repair">Boiler Repair</option>
-              <option value="installation">New Installation</option>
-              <option value="maintenance">Maintenance</option>
-              <option value="emergency">Emergency Service</option>
-              <option value="inspection">System Inspection</option>
+              <option value="">انتخاب خدمات</option>
+              <option value="repair">تعمیر دیگ بخار</option>
+              <option value="installation">نصب جدید</option>
+              <option value="maintenance">نگهداری</option>
+              <option value="emergency">خدمات اضطراری</option>
+              <option value="inspection">بازرسی سیستم</option>
             </select>
           </div>
         </div>
         
         <div class="form-group">
-          <label for="urgency">Urgency Level</label>
+          <label for="urgency">سطح فوریت</label>
           <select 
             id="urgency" 
             [(ngModel)]="contactForm().urgency" 
             name="urgency"
           >
-            <option value="normal">Normal (Within 24 hours)</option>
-            <option value="urgent">Urgent (Same day)</option>
-            <option value="emergency">Emergency (ASAP)</option>
+            <option value="normal">عادی (ظرف 24 ساعت)</option>
+            <option value="urgent">فوری (همان روز)</option>
+            <option value="emergency">اضطراری (فوراً)</option>
           </select>
         </div>
         
         <div class="form-group">
-          <label for="message">Describe the Issue</label>
+          <label for="message">توضیح مشکل</label>
           <textarea 
             id="message" 
             [(ngModel)]="contactForm().message" 
             name="message"
             rows="4"
-            placeholder="Please describe your boiler issue, symptoms, or what service you need..."
+            placeholder="لطفاً مشکل دیگ بخار، علائم یا خدمات مورد نیاز خود را توضیح دهید..."
           ></textarea>
         </div>
         
         <div class="form-actions">
           <button type="submit" class="submit-btn">
             <span class="btn-icon">📧</span>
-            <span class="btn-text">Send Request</span>
+            <span class="btn-text">ارسال درخواست</span>
           </button>
           
           <div class="form-note">
             <span class="note-icon">ℹ️</span>
-            <span class="note-text">We'll contact you within 2 hours during business hours</span>
+            <span class="note-text">ظرف 2 ساعت در ساعات کاری با شما تماس خواهیم گرفت</span>
           </div>
         </div>
       </form>

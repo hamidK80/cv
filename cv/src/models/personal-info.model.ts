@@ -10,18 +10,18 @@ export class PersonalInfo {
   certifications: string[];
 
   constructor() {
-    this.name = 'Hamid Kiani';
-    this.title = 'Boiler & Water Heater Expert';
-    this.phone = '+1234567890';
-    this.whatsapp = '+1234567890';
+    this.name = 'حمید کیانی';
+    this.title = 'متخصص تعمیر و نصب دیگ بخار و آبگرمکن';
+    this.phone = '+989123456789';
+    this.whatsapp = '+989123456789';
     this.email = 'hamid@example.com';
     this.photo = '/assets/images/hamid-photo.jpg';
-    this.story = 'Passionate about keeping homes warm and safe. Specialized in boiler repair with years of hands-on experience.';
+    this.story = 'علاقه‌مند به گرم نگه داشتن خانه‌ها و اطمینان از ایمنی آنها. متخصص تعمیر دیگ بخار با سال‌ها تجربه عملی.';
     this.experience = 5;
     this.certifications = [
-      'Gas Safe Registered',
-      'Boiler Installation Certified',
-      'Emergency Repair Specialist'
+      'دارای مجوز گاز',
+      'متخصص نصب دیگ بخار',
+      'متخصص تعمیرات اضطراری'
     ];
   }
 }

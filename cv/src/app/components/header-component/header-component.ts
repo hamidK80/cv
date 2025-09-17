@@ -12,17 +12,17 @@ export class HeaderComponent implements OnInit, OnDestroy {
   isMobileMenuOpen = signal(false);
 
   navigationItems = signal([
-    { name: 'Home', anchor: '#hero' },
-    { name: 'About', anchor: '#about' },
-    { name: 'Services', anchor: '#services' },
-    { name: 'How It Works', anchor: '#how-it-works' },
-    { name: 'Gallery', anchor: '#gallery' },
-    { name: 'Contact', anchor: '#contact' }
+    { name: 'خانه', anchor: '#hero' },
+    { name: 'درباره من', anchor: '#about' },
+    { name: 'خدمات', anchor: '#services' },
+    { name: 'نحوه کار', anchor: '#how-it-works' },
+    { name: 'گالری', anchor: '#gallery' },
+    { name: 'تماس', anchor: '#contact' }
   ]);
 
   contactInfo = signal({
-    phone: '+1 (555) 123-4567',
-    businessName: 'Professional Boiler Repair'
+    phone: '+989123456789',
+    businessName: 'تعمیرات حرفه‌ای دیگ بخار'
   });
 
   private scrollTimeout: any;

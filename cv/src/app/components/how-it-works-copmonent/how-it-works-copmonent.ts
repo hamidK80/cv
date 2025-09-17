@@ -10,24 +10,24 @@ export class HowItWorksCopmonent {
   steps = signal([
     {
       id: 1,
-      title: 'Contact Us',
-      description: 'Call or WhatsApp us with your boiler issue. We\'ll ask a few quick questions to understand the problem.',
+      title: 'تماس با ما',
+      description: 'با مشکل دیگ بخار خود با ما تماس بگیرید یا در واتساپ پیام دهید. چند سوال سریع می‌پرسیم تا مشکل را درک کنیم.',
       icon: '📞',
-      details: 'Available 24/7 for emergencies'
+      details: '24/7 برای موارد اضطراری در دسترس'
     },
     {
       id: 2,
-      title: 'Diagnosis & Quote',
-      description: 'We visit your property, diagnose the issue, and provide a transparent quote with no hidden fees.',
+      title: 'تشخیص و برآورد',
+      description: 'به ملک شما می‌آییم، مشکل را تشخیص می‌دهیم و برآورد شفافی بدون هزینه‌های پنهان ارائه می‌دهیم.',
       icon: '🔍',
-      details: 'Same-day diagnosis available'
+      details: 'تشخیص همان روز در دسترس'
     },
     {
       id: 3,
-      title: 'Repair & Follow-up',
-      description: 'We fix the problem quickly and efficiently, then provide tips to prevent future issues.',
+      title: 'تعمیر و پیگیری',
+      description: 'مشکل را سریع و کارآمد حل می‌کنیم، سپس نکاتی برای جلوگیری از مشکلات آینده ارائه می‌دهیم.',
       icon: '✅',
-      details: '12-month warranty included'
+      details: 'گارانتی 12 ماهه شامل'
     }
   ]);
 }

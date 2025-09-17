@@ -12,32 +12,32 @@ export class TipsData {
     this.tips = [
       {
         id: 'bleed-radiators',
-        title: 'Bleed Your Radiators',
-        content: 'Bleed your radiators monthly to avoid cold spots and improve heating efficiency.',
+        title: 'هواگیری رادیاتورها',
+        content: 'رادیاتورهای خود را ماهانه هواگیری کنید تا از نقاط سرد جلوگیری کرده و کارایی گرمایش را بهبود دهید.',
         category: 'maintenance'
       },
       {
         id: 'check-pressure',
-        title: 'Check Boiler Pressure',
-        content: 'Keep your boiler pressure between 1-2 bar. Low pressure can cause heating issues.',
+        title: 'بررسی فشار دیگ بخار',
+        content: 'فشار دیگ بخار خود را بین 1-2 بار نگه دارید. فشار کم می‌تواند باعث مشکلات گرمایش شود.',
         category: 'maintenance'
       },
       {
         id: 'annual-service',
-        title: 'Annual Service',
-        content: 'Schedule annual boiler service to prevent breakdowns and maintain efficiency.',
+        title: 'سرویس سالانه',
+        content: 'سرویس سالانه دیگ بخار را برنامه‌ریزی کنید تا از خرابی جلوگیری کرده و کارایی را حفظ کنید.',
         category: 'service'
       },
       {
         id: 'thermostat',
-        title: 'Smart Thermostat',
-        content: 'Install a smart thermostat to save energy and control heating remotely.',
+        title: 'ترموستات هوشمند',
+        content: 'ترموستات هوشمند نصب کنید تا انرژی صرفه‌جویی کرده و گرمایش را از راه دور کنترل کنید.',
         category: 'efficiency'
       },
       {
         id: 'insulation',
-        title: 'Pipe Insulation',
-        content: 'Insulate hot water pipes to reduce heat loss and save on energy bills.',
+        title: 'عایق‌بندی لوله‌ها',
+        content: 'لوله‌های آب گرم را عایق‌بندی کنید تا اتلاف گرما را کاهش داده و در هزینه‌های انرژی صرفه‌جویی کنید.',
         category: 'efficiency'
       }
     ];

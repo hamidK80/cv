@@ -10,56 +10,56 @@ export class GalleryComponent {
   galleryItems = signal([
     {
       id: 1,
-      title: 'Boiler Installation',
+      title: 'نصب دیگ بخار',
       beforeImage: '/assets/images/boiler-before.jpg',
       afterImage: '/assets/images/boiler-after.jpg',
-      caption: 'Complete boiler replacement with modern energy-efficient unit',
-      service: 'Installation',
+      caption: 'تعویض کامل دیگ بخار با واحد مدرن و بهینه انرژی',
+      service: 'نصب',
       year: '2024'
     },
     {
       id: 2,
-      title: 'Radiator Repair',
+      title: 'تعمیر رادیاتور',
       beforeImage: '/assets/images/radiator-before.jpg',
       afterImage: '/assets/images/radiator-after.jpg',
-      caption: 'Fixed leaking radiator and restored full heating',
-      service: 'Repair',
+      caption: 'تعمیر رادیاتور نشت‌دار و بازگرداندن گرمایش کامل',
+      service: 'تعمیر',
       year: '2024'
     },
     {
       id: 3,
-      title: 'Pipe Replacement',
+      title: 'تعویض لوله',
       beforeImage: '/assets/images/pipe-before.jpg',
       afterImage: '/assets/images/pipe-after.jpg',
-      caption: 'Replaced corroded pipes with new copper fittings',
-      service: 'Repair',
+      caption: 'تعویض لوله‌های خورده شده با اتصالات مسی جدید',
+      service: 'تعمیر',
       year: '2023'
     },
     {
       id: 4,
-      title: 'System Upgrade',
+      title: 'ارتقای سیستم',
       beforeImage: '/assets/images/system-before.jpg',
       afterImage: '/assets/images/system-after.jpg',
-      caption: 'Upgraded entire heating system for better efficiency',
-      service: 'Upgrade',
+      caption: 'ارتقای کامل سیستم گرمایش برای کارایی بهتر',
+      service: 'ارتقا',
       year: '2023'
     },
     {
       id: 5,
-      title: 'Emergency Fix',
+      title: 'تعمیر اضطراری',
       beforeImage: '/assets/images/emergency-before.jpg',
       afterImage: '/assets/images/emergency-after.jpg',
-      caption: 'Same-day emergency repair during winter breakdown',
-      service: 'Emergency',
+      caption: 'تعمیر اضطراری همان روز در طول خرابی زمستانی',
+      service: 'اضطراری',
       year: '2024'
     },
     {
       id: 6,
-      title: 'Maintenance Service',
+      title: 'خدمات نگهداری',
       beforeImage: '/assets/images/maintenance-before.jpg',
       afterImage: '/assets/images/maintenance-after.jpg',
-      caption: 'Annual service and cleaning for optimal performance',
-      service: 'Maintenance',
+      caption: 'سرویس سالانه و تمیزکاری برای عملکرد بهینه',
+      service: 'نگهداری',
       year: '2024'
     }
   ]);

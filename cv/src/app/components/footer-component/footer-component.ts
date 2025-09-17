@@ -8,42 +8,42 @@ import { Component, signal, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
   footerData = signal({
-    businessName: 'Professional Boiler Repair',
-    tagline: 'Your trusted local boiler and water heater expert',
-    phone: '+1 (555) 123-4567',
+    businessName: 'تعمیرات حرفه‌ای دیگ بخار',
+    tagline: 'متخصص قابل اعتماد محلی دیگ بخار و آبگرمکن شما',
+    phone: '+989123456789',
     email: 'info@boilerrepair.com',
-    address: '123 Main Street, Your City, State 12345',
-    serviceAreas: ['Downtown', 'Northside', 'Eastside', 'Westside', 'Southside'],
+    address: 'تهران، خیابان ولیعصر، پلاک 123',
+    serviceAreas: ['تهران', 'کرج', 'اصفهان', 'شیراز', 'مشهد'],
     socialLinks: {
       facebook: '#',
       instagram: '#',
       linkedin: '#'
     },
     quickLinks: [
-      { name: 'Home', anchor: '#hero' },
-      { name: 'About', anchor: '#about' },
-      { name: 'Services', anchor: '#services' },
-      { name: 'How It Works', anchor: '#how-it-works' },
-      { name: 'Gallery', anchor: '#gallery' },
-      { name: 'Contact', anchor: '#contact' }
+      { name: 'خانه', anchor: '#hero' },
+      { name: 'درباره من', anchor: '#about' },
+      { name: 'خدمات', anchor: '#services' },
+      { name: 'نحوه کار', anchor: '#how-it-works' },
+      { name: 'گالری', anchor: '#gallery' },
+      { name: 'تماس', anchor: '#contact' }
     ],
     serviceLinks: [
-      { name: 'Boiler Repair', anchor: '#services' },
-      { name: 'Water Heater Service', anchor: '#services' },
-      { name: 'Emergency Service', anchor: '#contact' },
-      { name: 'Maintenance', anchor: '#services' },
-      { name: 'Installation', anchor: '#services' }
+      { name: 'تعمیر دیگ بخار', anchor: '#services' },
+      { name: 'سرویس آبگرمکن', anchor: '#services' },
+      { name: 'خدمات اضطراری', anchor: '#contact' },
+      { name: 'نگهداری', anchor: '#services' },
+      { name: 'نصب', anchor: '#services' }
     ],
     legalLinks: [
-      { name: 'Privacy Policy', href: '#' },
-      { name: 'Terms of Service', href: '#' },
-      { name: 'Warranty', href: '#' }
+      { name: 'حریم خصوصی', href: '#' },
+      { name: 'شرایط خدمات', href: '#' },
+      { name: 'گارانتی', href: '#' }
     ],
     certifications: [
-      'Licensed & Insured',
-      'Gas Safe Certified',
-      '24/7 Emergency Service',
-      '5-Year Warranty'
+      'دارای مجوز و بیمه',
+      'دارای گواهی گاز',
+      'خدمات اضطراری 24/7',
+      'گارانتی 5 ساله'
     ]
   });
 
@@ -71,43 +71,43 @@ export class FooterComponent implements OnInit {
       "address": {
         "@type": "PostalAddress",
         "streetAddress": this.footerData().address,
-        "addressLocality": "Your City",
-        "addressRegion": "State",
+        "addressLocality": "تهران",
+        "addressRegion": "تهران",
         "postalCode": "12345",
-        "addressCountry": "US"
+        "addressCountry": "IR"
       },
       "areaServed": this.footerData().serviceAreas,
       "serviceType": [
-        "Boiler Repair",
-        "Water Heater Service",
-        "Emergency Plumbing",
-        "HVAC Maintenance"
+        "تعمیر دیگ بخار",
+        "سرویس آبگرمکن",
+        "لوله‌کشی اضطراری",
+        "نگهداری سیستم گرمایش"
       ],
       "openingHours": [
         "Mo-Fr 07:00-18:00",
         "Sa 08:00-16:00"
       ],
       "priceRange": "$$",
-      "paymentAccepted": ["Cash", "Credit Card", "Check"],
-      "currenciesAccepted": "USD",
+      "paymentAccepted": ["نقد", "کارت اعتباری", "چک"],
+      "currenciesAccepted": "IRR",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Boiler Repair Services",
+        "name": "خدمات تعمیر دیگ بخار",
         "itemListElement": [
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Emergency Boiler Repair",
-              "description": "24/7 emergency boiler repair service"
+              "name": "تعمیر اضطراری دیگ بخار",
+              "description": "خدمات تعمیر اضطراری دیگ بخار 24/7"
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Boiler Installation",
-              "description": "Professional boiler installation and replacement"
+              "name": "نصب دیگ بخار",
+              "description": "نصب و تعویض حرفه‌ای دیگ بخار"
             }
           }
         ]

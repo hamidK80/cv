@@ -9,14 +9,14 @@ import { FormsModule } from '@angular/forms';
 })
 export class ContactComponent {
   contactInfo = signal({
-    phone: '+1 (555) 123-4567',
+    phone: '+989123456789',
     email: 'info@boilerrepair.com',
-    address: '123 Main Street, Your City, State 12345',
-    serviceAreas: ['Downtown', 'Northside', 'Eastside', 'Westside', 'Southside'],
+    address: 'تهران، خیابان ولیعصر، پلاک 123',
+    serviceAreas: ['تهران', 'کرج', 'اصفهان', 'شیراز', 'مشهد'],
     businessHours: {
-      weekdays: '7:00 AM - 6:00 PM',
-      saturday: '8:00 AM - 4:00 PM',
-      sunday: 'Emergency Only'
+      weekdays: '7:00 صبح - 6:00 عصر',
+      saturday: '8:00 صبح - 4:00 عصر',
+      sunday: 'فقط اضطراری'
     }
   });
 
@@ -42,11 +42,11 @@ export class ContactComponent {
 
   getServiceIcon(area: string): string {
     const icons: { [key: string]: string } = {
-      'Downtown': '🏢',
-      'Northside': '🏘️',
-      'Eastside': '🌅',
-      'Westside': '🌇',
-      'Southside': '🏡'
+      'تهران': '🏢',
+      'کرج': '🏘️',
+      'اصفهان': '🌅',
+      'شیراز': '🌇',
+      'مشهد': '🏡'
     };
     return icons[area] || '📍';
   }
