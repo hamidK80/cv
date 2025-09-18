@@ -17,6 +17,7 @@ body {
   color: var(--text-primary);
   background-color: var(--bg-primary);
   transition: background-color var(--transition-normal), color var(--transition-normal);
+  overflow-x: hidden; /* clamp horizontal overflow from transforms */
 }
 
 /* Typography */

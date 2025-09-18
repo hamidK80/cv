@@ -11,10 +11,11 @@ import { FaqComponent } from './components/faq-component/faq-component';
 import { GalleryComponent } from './components/gallery-component/gallery-component';
 import { ContactComponent } from './components/contact-component/contact-component';
 import { FooterComponent } from './components/footer-component/footer-component';
+import { RevealDirective } from './directives/reveal.directive';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, HeroComponent, AboutComponent, ServicesComponent, HowItWorksCopmonent, ToolboxComponent, TipComponent, FaqComponent, GalleryComponent, ContactComponent, FooterComponent],
+  imports: [RouterOutlet, HeaderComponent, HeroComponent, AboutComponent, ServicesComponent, HowItWorksCopmonent, ToolboxComponent, TipComponent, FaqComponent, GalleryComponent, ContactComponent, FooterComponent, RevealDirective],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
