@@ -11,7 +11,7 @@ export class PersonalInfo {
 
   constructor() {
     this.name = 'حمید کیانی';
-    this.title = 'متخصص تعمیر و نصب دیگ بخار و آبگرمکن';
+    this.title = 'متخصص تعمیر و نصب پکیج دیواری و رادیاتور';
     this.phone = '+989123456789';
     this.whatsapp = '+989123456789';
     this.email = 'hamid@example.com';
