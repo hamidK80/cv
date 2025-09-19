@@ -10,7 +10,7 @@ export class FooterComponent implements OnInit {
   footerData = signal({
     businessName: 'تعمیرات حرفه‌ای دیگ بخار',
     tagline: 'متخصص قابل اعتماد محلی دیگ بخار و آبگرمکن شما',
-    phone: '+989123456789',
+    phone: '+989213298733',
     email: 'info@boilerrepair.com',
     address: 'تهران، خیابان ولیعصر، پلاک 123',
     serviceAreas: ['تهران', 'کرج', 'اصفهان', 'شیراز', 'مشهد'],

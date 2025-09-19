@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   ]);
 
   contactInfo = signal({
-    phone: '+989123456789',
+    phone: '+98213298733',
     businessName: 'تعمیرات حرفه‌ای دیگ بخار'
   });
 

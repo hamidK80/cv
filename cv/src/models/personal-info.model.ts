@@ -10,10 +10,10 @@ export class PersonalInfo {
   certifications: string[];
 
   constructor() {
-    this.name = 'حمید کیانی';
+    this.name = 'حمید کوشافر';
     this.title = 'متخصص تعمیر و نصب پکیج دیواری و رادیاتور';
-    this.phone = '+989123456789';
-    this.whatsapp = '+989123456789';
+    this.phone = '+989213298733';
+    this.whatsapp = '+989213298733';
     this.email = 'hamid@example.com';
     this.photo = '/assets/images/hamid-photo.jpg';
     this.story = 'علاقه‌مند به گرم نگه داشتن خانه‌ها و اطمینان از ایمنی آنها. متخصص تعمیر دیگ بخار با سال‌ها تجربه عملی.';
